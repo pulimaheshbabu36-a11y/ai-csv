@@ -1,0 +1,32 @@
+# Environment & Secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Temporary data & generated reports
+backend/uploads/*
+!backend/uploads/.gitkeep
+reports/*
+!reports/.gitkeep
+backend/database/reports.db
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+
+# Nested duplicate backup
+AI CSV REPORT/
+
+# Vercel
+.vercel/

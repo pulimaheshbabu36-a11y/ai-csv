@@ -1,0 +1,13 @@
+.git
+.venv
+venv
+**/__pycache__
+*.pyc
+backend/uploads/*
+!backend/uploads/.gitkeep
+reports/*
+!reports/.gitkeep
+backend/database/reports.db
+.vscode
+.env
+AI CSV REPORT

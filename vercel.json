@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/upload-csv",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/preview-csv/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/analyze-csv/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/clean-csv/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/generate-insights/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/dataset-statistics/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/run-agent/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/agent-progress/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/agent-result/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/download-report/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/download-excel/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/report-history",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/report-history/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/reports/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/api/:match*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/style.css",
+      "destination": "/frontend/style.css"
+    },
+    {
+      "source": "/script.js",
+      "destination": "/frontend/script.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/$1"
+    }
+  ]
+}
